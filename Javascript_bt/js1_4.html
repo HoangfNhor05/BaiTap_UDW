@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Javascript_bt/js1_4.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/header_body.css">
+    <link rel="stylesheet" href="/CSS/date_time.css">
+    <script src="/Javascript_bt/js1_4.js"></script>
+   <!-- <script src="/Javascript_bt/js01.js"></script> -->
+</head>
+<body>
+    <header>
+        JS - JavaScript
+      <br />
+      Bài Tập
+    </header>
+
+    <div class="clock">
+      <p id="date"></p>
+      <p id="time"></p>
+    </div>
+    <div class="page">Trang 1</div>
+    <div class="container">
+   
+        <div class="baitap bt1">
+          <div class="title">Bài tập 1</div>
+          <div class="bt1-header">Chương Trình Tính Tuổi</div>
+
+          <div id="table">
+              <table >
+                  <tr>
+                      <td>Nhập vào tên của bạn: </td>
+                      <td ><input type="text" placeholder="Nhập tên" id="js-name" size="25"></td>
+                  </tr>
+                  <tr>
+                      <td>Nhập vào năm sinh: </td>
+                      <td><input type="text" placeholder="Nhập năm sinh" id="js-namSinh" size="15"></td>
+                  </tr>
+                  <tr>
+                      <td><button onclick="tinhTuoi()" class="btn">Tính tuổi</button></td>
+                      <td><p id="js-kq"></p></td>
+                  </tr>
+              </table>
+          </div>
+        </div>
+  
+        <div class="baitap bt2">
+          <div class="title">Bài tập 2</div>
+        
+           <div class="bt2-content">
+            <button class="btn" onclick="showFunction()">Tính Số Ngày</button>
+            <h2 id="js-setDate"></h2>
+            <h3 id="js-dateNow"></h3>
+            <h4 id="js-TimeNow"></h4>
+            <button class="btn" onclick="dateTime()">Xem Ngày Giờ</button>
+           </div>
+      
+        
+        </div>
+
+        <div class="baitap bt3">
+            <div class="title">Bài tập 3</div>
+            <table>
+                <caption>
+                  Chương Trình Giải Phương Trình Bậc 2
+                  <br />ax
+                  <sup>2</sup>
+                  + bx + c = 0
+                </caption>
+                <tr>
+                  <td>a =</td>
+                  <td><input type="text" size="20px" id="a" /></td>
+                </tr>
+                <tr>
+                  <td>b =</td>
+                  <td><input type="text" size="20px" id="b" /></td>
+                </tr>
+                <tr>
+                  <td>c =</td>
+                  <td><input type="text" size="20px" id="c" /></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                      <button onclick="giaiPt()" class="btn">Giải PT</button>
+                      <button onclick="xoa()" class="btn">Xóa</button>
+                  </td>
+                </tr>
+              </table>
+              <p id="ketQua" text-align="center"></p>
+          </div>
+
+          <div class="baitap bt4">
+            <div class="title">Bài tập 4</div>
+            <form id="myForm" onsubmit="return Tinh()">
+                <table>
+                    <tr>
+                        <th colspan="2">Các Phép Tính Số Học</th>
+                    </tr>
+                    <tr>
+                        <th> Số Thứ Nhất </th>
+                        <td> <input type="text" size="20px" name="js-so1"></td>
+                    </tr>
+                    <tr>
+                        <th> Số Thứ Hai </th>
+                        <td> <input type="text" size="20px"name="js-so2"></td>
+                    </tr>
+                    <tr>
+                        <th> Chọn Các Phép Toán</th>
+                        <td>
+                            <input type="radio" name="op" value="+">Cộng<br>
+                            <input type="radio" name="op" value="-">Trừ<br>
+                            <input type="radio" name="op" value="/">Chia<br>
+                            <input type="radio" name="op" value="*">Nhân
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="thực hiện" class="btn"></td>
+                        <td ><input type="text" name="kq" readonly></td>
+                    </tr>
+                </table>
+                </form>
+          </div>
+
+          <div class="changePage">
+            <div class="pagetile">Chuyển Trang</div>
+            <div class="page1">
+              <a href="/Javascript_bt/js1_4.html">Trang 1</a>
+            </div>
+            <div class="page2">
+              <a href="/Javascript_bt/js5_7.html">Trang 2</a>
+            </div>
+            <div class="page3">
+              <a href="/Javascript_bt/js8_10.html">Trang 3</a>
+            </div>
+            <div class="page4">
+              <a href="/Javascript_bt/js11_13.html">Trang 4</a>
+            </div>
+          </div>
+
+      </div>
+
+    <div class="linkHTML"><a  href="/index.html">Quay Về Trang Sách</a></div>
+    <script src="/javascript/clock.js"></script>
+  </body>
+</html>

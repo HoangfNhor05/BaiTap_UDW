@@ -1,0 +1,19 @@
+.clock{
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    color: aqua;
+    text-shadow: 0px 0px 10px white;
+}
+
+#date{
+font-weight: 500;
+}
+
+#time{
+    margin-right: 60px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/bai5_7_8.css" />
+    <link rel="stylesheet" href="/CSS/date_time.css" />
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/header_body.css">
+  </head>
+
+  <body>
+    <header>
+      HTML - Hypertext Markup Languages
+      <br />
+      Bài Tập
+    </header>
+
+    <div class="clock">
+      <p id="date"></p>
+      <p id="time"></p>
+    </div>
+    <div class="page">Trang 2</div>
+    <div class="container">
+      <div class="baitap bt5">
+        <div class="title">Bài tập 5</div>
+        <h1><b>Mạng Máy Tính</b></h1>
+        <ol type="I" class="bt5-title-content">
+          <li>
+            <b > Mô hình OSI</b>
+            <dt>
+              <dl>
+                <b>Application</b>
+                <dd >Lớp Ứng Dụng</dd>
+                <b>Presentation</b>
+                <dd >Lớp trình diễn</dd>
+                <b>Session</b>
+                <dd >Lớp nhiên</dd>
+                <b>Transport</b>
+                <dd >Lớp giao vận</dd>
+                <b>Network</b>
+                <dd >Lớp mạng</dd>
+                <b>Datalink</b>
+                <dd >Lớp liên kết dữ liệu</dd>
+                <b>Physical</b>
+                <dd >Lớp vật lý</dd>
+              </dl>
+            </dt>
+          </li>
+          <li>
+            <b >Các giao thức lớp ứng dụng</b>
+            <dt>
+              <dl>
+                <b>DNS</b>
+                <dd >Domain Name System</dd>
+                <b>FTB</b>
+                <dd >File Transfer Protocol</dd>
+                <b>STMP</b>
+                <dd >Simple Mail Transfer Protocol</dd>
+                <b>HTPP</b>
+                <dd >HyperText Transfer Protocol</dd>
+              </dl>
+            </dt>
+          </li>
+        </ol>
+      </div>
+
+      <div class="baitap bt7">
+        <div class="title">Bài tập 7</div>
+        <div style="text-align: center">
+          <img
+            class="bt7-img"
+            src="/images/mapVN.jpg"
+            alt="Bản Đồ Việt Nam"
+            usemap="#map"
+          />
+        </div>
+        <map name="map">
+          <area
+            shape="poly"
+            coords="235,237,230,255,260,279,270,275,269,256,273,251,266,239,261,232,243,244"
+            href="https://hanoi.gov.vn/home"
+            title="Cổng Thông tin Hà Nội"
+          />
+          <area
+            shape="poly"
+            coords="354,524,348,582,333,535,337,549,350,563,382,563,386,555,,402,556"
+            href="http://www.thuathienhue.gov.vn/vi-vn/"
+            title="Cổng Thông tin Huế"
+          />
+          <area
+            shape="poly"
+            coords="295,872,291,880,301,888,294,896,313,899,318,918,326,917,329,907,314,903,313,895"
+            href="trang http://www.hochiminhcity.gov.vn/Pages/default.aspx"
+            title="Cổng thông tin điện tử Thành phố Hồ Chí Minh"
+          />
+        </map>
+      </div>
+
+      <div class="baitap bt8">
+        <div class="title">Bài tập 8</div>
+        <b style="text-align: left 40">
+          <p>Nghe Audio</p>
+        </b>
+        <audio controls loop>
+          <source src="../images/audio.mp3" type="audio/mpeg" />
+        </audio>
+        <div style="text-align: center">
+          <h4  class="bt8-ifr" style="text-align: center">Xem video trên youtobe</h4>
+          <iframe
+         
+            width="460"
+            height="315"
+            src="https://www.youtube.com/embed/kihtb2FIYLc?si=zyLIBvXP5XIrqQ-P"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="changePage">
+        <div class="pagetile">Chuyển Trang</div>
+        <div class="page1">
+          <a href="/HTML/bai1_4.html">Trang 1</a>
+        </div>
+        <div class="page2">
+          <a href="/HTML/bai5_7_8.html">Trang 2</a>
+        </div>
+        <div class="page3">
+          <a href="/HTML/bai6_9.html">Trang 3</a>
+        </div>
+        <div class="page4">
+          <a href="/HTML/bai10.html">Trang 4</a>
+        </div>
+      </div>
+    </div>
+    <div class="linkHTML"><a  href="/index.html">Quay Về Trang Sách</a></div>
+    <script src="/javascript/clock.js"></script>
+  </body>
+</html>

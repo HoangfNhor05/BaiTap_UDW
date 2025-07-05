@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/header_body.css">
+    <link rel="stylesheet" href="/CSS/date_time.css">
+    <link rel="stylesheet" href="/Jquery/js8_9.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+        <header>
+            JS - JavaScript
+            <br />
+            Bài Tập
+        </header>
+
+        <div class="clock">
+            <p id="date"></p>
+            <p id="time"></p>
+        </div>
+        <div class="page">Trang 3</div>
+        <div class="container">
+
+            <div class="baitap bt8">
+                <div class="title">Bài tập 8</div>
+                <script>
+                    $(document).ready(function(){
+                        let move = false;
+                        let prevX, prevY;
+            
+                        $("#box").mousedown(function(e){
+                            prevX = e.pageX - this.offsetLeft;
+                            prevY = e.pageY - this.offsetTop;
+                            move = true;
+                        });
+            
+                        $(document).mousemove(function(e){
+                            if(move){
+                                let curX = e.pageX;
+                                let curY = e.pageY;
+            
+                                let newLeft = curX - prevX + "px";
+                                let newTop = curY - prevY + "px";
+            
+                                $("#box").css("left", newLeft);
+                                $("#box").css("top", newTop);
+                            }
+                        });
+            
+                        $(document).mouseup(function(){
+                            move = false;
+                        });
+            
+                        $(".bt8-content").on("keydown", function(event){
+                            let circleLeft = parseInt($("#box").css("left"));
+                            let circleTop = parseInt($("#box").css("top"));
+                            let newLeft = circleLeft;
+                            let newTop = circleTop;
+            
+                            switch(event.which){
+                                case 37:
+                                    newLeft = circleLeft - 5;
+                                    break;
+                                case 38:
+                                    newTop = circleTop - 5;
+                                    break;
+                                case 39:
+                                    newLeft = circleLeft + 5;
+                                    break;
+                                case 40:
+                                    newTop = circleTop + 5;
+                                    break;
+                            }
+            
+                            $("#box").css("left", newLeft + "px");
+                            $("#box").css("top", newTop + "px");
+                        });
+                    });
+                </script>
+                <div class="bt8-content">
+                    <div id="box"></div>
+                </div>
+            </div>
+
+            <div class="baitap bt9">
+                <div class="title">Bài tập 9</div>
+
+                <script>
+                    $(document).ready(function () {
+                        var arr = [];
+                        $("li").click(function () {
+                            $("#view").text($(this).text());
+                        })
+            
+                        $("#yes").click(function () {
+                            $("#view").addClass("shadow");
+                        })
+            
+                        $("#no").click(function () {
+                            $("#view").removeClass("shadow");
+                        })
+            
+                        $("#textcolor").change(function () {
+                            $("#view").css("color", $(this).val());
+                        })
+            
+                        $("#xoa").click(function () {
+                            var text = $("ol li:last").text();
+                            if (text == "") return;
+                            arr.unshift(text);
+                            $("ol li:last").remove();
+            
+                        })
+                        //Xử lí phục hồi
+                        $("#phuchoi").click(function () {
+                            if (arr.length == 0) return;
+                            var item = "<li>" + arr.shift() + "</li>";
+                            $("ol").append(item);
+                        })
+                    })
+                </script>
+                <div class="bt9-container">
+                    <div class="bt9-left">
+                        <fieldset>
+                            <legend>Chọn</legend>
+                            <p>
+                                <input type="radio" name="shadow" id="no" checked>Chữ bình thường
+                                <br>
+                                <input type="radio" name="shadow" id="yes">Chữ có bóng
+                            </p>
+                        </fieldset><br>
+                        </p>
+                        <p>
+                            Chọn màu chữ <input type="color" id="textcolor" value="#0000ff">
+                        <p>
+                            <button id="xoa">Xóa phần tử cuối</button>
+                            <button id="phuchoi">Phục hồi</button>
+                        </p>
+                        </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Click vào một chuỗi</legend>
+                            <ol id="list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JQUERY</li>
+                                <li>JAVASCRIPT</li>
+                            </ol>
+                        </fieldset>
+            
+                    </div>
+                    <div class="bt9-right">
+                        <p id="view">HTML</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="changePage">
+                <div class="pagetile">Chuyển Trang</div>
+                <div class="page1">
+                    <a href="/Jquery/jq1_4.html">Trang 1</a>
+                </div>
+                <div class="page2">
+                    <a href="/Jquery/jq5_7.html">Trang 2</a>
+                </div>
+                <div class="page3">
+                    <a href="/Jquery/jq8_9.html">Trang 3</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="linkHTML"><a href="/index.html">Quay Về Trang Sách</a></div>
+        <script src="/javascript/clock.js"></script>
+    </body>
+</body>
+
+</html>

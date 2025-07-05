@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Javascript_bt/js11_13.css" />
+    <link rel="stylesheet" href="/CSS/reset.css" />
+    <link rel="stylesheet" href="/CSS/header_body.css" />
+    <link rel="stylesheet" href="/CSS/date_time.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body onload="draw()">
+    <header>
+        JS - JavaScript
+        <br />
+        Bài Tập
+    </header>
+
+    <div class="clock">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+    <div class="page">Trang 4</div>
+    <div class="container">
+        <div class="baitap bt11">
+            <div class="title">Bài tập 11</div>
+            <div>
+                <h1>Image Resizing</h1>
+                <hr>
+                <label>Scale:</label>
+                <input type="radio" name="img" id="scale1" value="10%" onclick="changeScale(this)">10%
+                <input type="radio" name="img" id="scale2" value="25%" onclick="changeScale(this)">25%
+                <input type="radio" name="img" id="scale3" value="50%" onclick="changeScale(this)">50%
+                <br>
+                <img class="bt11-img" src="/images/6.jpg" alt="Ảnh biển" id="ocean">
+            </div>
+        </div>
+
+        <div class="baitap bt12">
+            <div class="title">Bài tập 12</div>
+
+            <div class="bt12-content">
+                <canvas id="canvas" width="400" height="400"></canvas>
+                <script>
+                    function draw() {
+                        var canvas = document.getElementById("canvas");
+                        var ctx = canvas.getContext("2d");
+
+                        ctx.fillStyle = "#00ffff";
+                        ctx.fillRect(0, 0, 400, 400);
+
+                        ctx.beginPath();
+                        ctx.arc(200, 200, 199, 0, 2 * Math.PI);
+                        var grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                        grd.addColorStop(0, "red");
+                        grd.addColorStop(0.25, "green");
+                        grd.addColorStop(0.5, "white");
+                        grd.addColorStop(0.75, "green");
+                        grd.addColorStop(1, "red");
+                        ctx.fillStyle = grd;
+                        ctx.fill();
+                        ctx.strokeStyle = "blue";
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(200, 0);
+                        ctx.lineTo(400, 200);
+                        ctx.lineTo(200, 400);
+                        ctx.lineTo(0, 200);
+                        ctx.lineTo(200, 0);
+                        ctx.fillStyle = "yellow";
+                        ctx.fill();
+                        ctx.strokeStyle = "#ff00ff";
+                        ctx.lineWidth = 3;
+                        ctx.stroke();
+                        ctx.font = "80px Arial";
+                        ctx.lineWidth = 5;
+                        ctx.strokeStyle = "blue";
+                        ctx.fillStyle = "cyan";
+                        ctx.strokeText("HTML5", canvas.width / 5, canvas.height / 2 + 30);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="baitap bt13">
+           <div class="title">Bài tập 13</div>
+            <label class="string-content" for="valueNumber">Nhập các giá trị : </label>
+            <input type="text" size="50" id="valueNumber" />
+            <input type="button" value="Draw Chart" onclick="cChart()" />
+
+            <div id="chart">
+                <canvas id="myChart" style="max-width:400px"></canvas>
+            </div>
+        </div>
+
+        <div class="changePage">
+            <div class="pagetile">Chuyển Trang</div>
+            <div class="page1">
+                <a href="/Javascript_bt/js1_4.html">Trang 1</a>
+            </div>
+            <div class="page2">
+                <a href="/Javascript_bt/js5_7.html">Trang 2</a>
+            </div>
+            <div class="page3">
+                <a href="/Javascript_bt/js8_10.html">Trang 3</a>
+            </div>
+            <div class="page4">
+                <a href="/Javascript_bt/js11_13.html">Trang 4</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="linkHTML"><a href="/index.html">Quay Về Trang Sách</a></div>
+    <script src="/Javascript_bt/js11_13.js"></script>
+    <script src="/javascript/clock.js"></script>
+</body>
+
+</html>

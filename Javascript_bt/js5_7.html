@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/header_body.css">
+    <link rel="stylesheet" href="/CSS/date_time.css">
+    <link rel="stylesheet" href="/Javascript_bt/js5_7.css">
+    <script src="/Javascript_bt/js5_7.js"></script>
+</head>
+<body>
+    <body>
+        <header>
+            JS - JavaScript
+          <br />
+          Bài Tập
+        </header>
+    
+        <div class="clock">
+          <p id="date"></p>
+          <p id="time"></p>
+        </div>
+        <div class="page">Trang 2</div>
+        <div class="container">
+       
+            <div class="baitap bt5">
+              <div class="title">Bài tập 5</div>
+             <div class="bt5-content">
+                <script>
+                    var html = "<table> <caption> Bảng Cửu Chương </caption>";
+                    var count = 2;
+                    var row, col;
+                    for (row = 1; row <= 2; row++) {
+                      html += "<tr>";
+                      for (col = 1; col <= 4; col++) {
+                        html += "<td>";
+                        for (var i = 1; i <= 9; i++)
+                          html += count + " x " + i + " = " + count * i + "<br>";
+              
+                        html += "</td>";
+                        count++;
+                      }
+                      html += "</tr>";
+                    }
+                    html += "</table>";
+                    document.write(html);
+                  </script>
+             </div>
+            </div>
+      
+            <div class="baitap bt6">
+              <div class="title">Bài tập 6</div>
+            
+              <form id="myForm" onSubmit="return dangki()">
+                <table align="center" border="1px" width="70%">
+                  <caption>
+                    <h2>ĐĂNG KÍ THÀNH VIÊN</h2>
+                  </caption>
+                  <tr>
+                    <td>
+                      <label for="user">Tên đăng nhập</label>
+                    </td>
+                    <td>
+                      <input type="text" name="user" placeholder="Nhập tên" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="pass">Mật khẩu</label>
+                    </td>
+                    <td>
+                      <input
+                        type="password"
+                        name="pass"
+                        placeholder="Nhập mật khẩu"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Ngày sinh</td>
+                    <td>
+                      <input type="date" name="ns" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Giới tính</td>
+                    <td>
+                      <input type="radio" name="sex" value="nam" checked />Nam
+                      <input type="radio" name="sex" value="nữ" />Nữ
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Vấn đề bạn quan tâm</td>
+                    <td>
+                      <select name="qt">
+                        <option value="Kinh tế">Kinh tế</option>
+                        <option value="Thể thao">Thể thao</option>
+                        <option value="Văn học">Văn học nghệ thuật</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><button type="reset">Reset</button></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <textarea name="thongtin" rows="6" cols="50"></textarea>
+                    </td>
+                  </tr>
+                </table>
+              </form>
+          
+            
+            </div>
+    
+            <div class="baitap bt7">
+                <div class="title">Bài tập 7</div>
+                <table>
+                    <caption>
+                      Chương Trình Xử Lí Chuỗi
+                    </caption>
+                    <tr>
+                      <td>Chuỗi S1 :</td>
+                      <td>
+                        <input
+                          type="text"
+                          id="S1"
+                          value="learning JAVASCRIPT is veRy easy"
+                          size="40"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Chuỗi S2 :</td>
+                      <td><input type="text" id="S2" size="20" value="abcxyz"/></td>
+                    </tr>
+                    <tr>
+                      <td>Chuỗi S3 :</td>
+                      <td><input type="text" id="S3" size="20" value="123bcd"/></td>
+                    </tr>
+                    <tr>
+                      <td>Vị Trí Chèn :</td>
+                      <td><input type="text" id="index" size="5" value="7" /></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <input type="button" value="Chuẩn Hóa Chuỗi" onclick="normal()" />
+                        <input type="button" value="Đảo Chuỗi" onclick="reverse()" />
+                        <input type="button" value="Khôi Phục" onclick="reset()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <input
+                          type="button"
+                          value="Thay Thế S2 Bằng S3"
+                          onclick="replace()"
+                        />
+                        <input type="button" value="Chèn S2 Vào S1" onclick="insertStr()" />
+                        <input type="button" value="Xóa S2 trong S1" onclick="delS2()" />
+                      </td>
+                    </tr>
+                  </table>
+              </div>
+    
+              <div class="changePage">
+                <div class="pagetile">Chuyển Trang</div>
+                <div class="page1">
+                  <a href="/Javascript_bt/js1_4.html">Trang 1</a>
+                </div>
+                <div class="page2">
+                  <a href="/Javascript_bt/js5_7.html">Trang 2</a>
+                </div>
+                <div class="page3">
+                  <a href="/Javascript_bt/js8_10.html">Trang 3</a>
+                </div>
+                <div class="page4">
+                  <a href="/Javascript_bt/js11_13.html">Trang 4</a>
+                </div>
+              </div>
+    
+          </div>
+    
+        <div class="linkHTML"><a  href="/index.html">Quay Về Trang Sách</a></div>
+        <script src="/javascript/clock.js"></script>
+      </body>
+</body>
+</html>

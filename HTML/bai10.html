@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reset.css" />
+    <link rel="stylesheet" href="/CSS/header_body.css" />
+    <link rel="stylesheet" href="/CSS/date_time.css" />
+    <link rel="stylesheet" href="/CSS/bai10.css" />
+    <script src="/javascript/bai10.js"></script>
+  </head>
+  <body>
+    <header>
+      HTML - Hypertext Markup Languages
+      <br />
+      Bài Tập
+    </header>
+
+    <div class="clock">
+      <p id="date"></p>
+      <p id="time"></p>
+    </div>
+    <div class="page">Trang 4</div>
+    <div class="container">
+      <div class="baitap bt10">
+        <div class="title">Bài tập 10</div>
+        <div class="bt10-title">
+          <h2 style="text-align: center"><b>BÀI KIỂM TRA CHƯƠNG 2</b></h2>
+          <p style="text-align: center">
+            <b>Môn Học: </b><i>Ứng Dụng Web</i> <br /><b>Mã số sinh viên : </b
+            ><i>2351010064</i> <br /><b>Họ và Tên : </b><i>Nguyễn Duy Hoàng</i>
+          </p>
+          <div class="b10-info">
+            <p onclick="index()">Trang Chủ</p>
+            <p onclick="content()">Nội dung môn học</p>
+            <p onclick="register()">Đăng ký</p>
+          </div>
+          <hr color="black" size="3" width="70%" />
+        </div>
+        <div class="bt10-container">
+          <div class="bt10-content">
+            <h1>NỘI DUNG MÔN HỌC</h1>
+            <ol type="I" class="bt10-main">
+              <li>
+                <u><b>HTML</b></u>
+                <ol type="1">
+                  <li>
+                    <b><i>Mực tiêu chương</i></b>
+                  </li>
+                  <li>
+                    <b><i>Nội dung</i></b>
+                    <ul type="circle">
+                      <li>
+                        Văn bản, hình ảnh
+                        <ul type="square">
+                          <li>Văn bản</li>
+                          <li>Hình ảnh</li>
+                        </ul>
+                      </li>
+                      <li>Danh sách</li>
+                      <li>Bảng</li>
+                      <li>Form & Control</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <u><b>CSS</b></u>
+                <ol type="1">
+                  <li>
+                    <b><i>Mục Tiêu Chương</i></b>
+                  </li>
+                  <li>
+                    <b><i>Nội dung</i></b>
+                    <ul type="circle">
+                      <li>Cú pháp CSS</li>
+                      <li>Các bộ chọn CSS</li>
+                      <li>Định dạng trang với CSS</li>
+                      <ol type="a">
+                        <li>Văn bản và form chữ</li>
+                        <li>Màu và nền</li>
+                        <li>Bảng và danh sách</li>
+                      </ol>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <u><b>Javascript</b></u>
+              </li>
+              <li>
+                <u><b>jQuery</b></u>
+              </li>
+            </ol>
+          </div>
+          <div class="bt10-index close">
+            <h1 align="center">Giới thiệu môn học</h1>
+            <p>
+              Môn học Ứng dụng Web trang bị cho sinh viên các kiến thức cơ bản
+              về ngôn ngữ HTML, Javascript, CSS, jQuery; cách lập trình xử lyd
+              trang web động phía trình duyệt, sử dụng một số phần mềm thiết kế
+              Web nổi tiếng.
+              <br />
+              Các kiến thức trên giúp cho sinh viên có thể thiết kế ứng dụng web
+              ở mức cơ bản và là nền tảng để học tốt các môn lập trình Web sau
+              này, đồng thời trang bị cho sinh kiến thức và kĩ năng cần thiết để
+              có thể làm đồ án môn học, khóa luận tốt nghiệp và ứng dụng trong
+              thức tế sau khi ra tường.
+            </p>
+            <br />
+            <h1 align="center">Phương pháp đánh giá</h1>
+            <table align="center" border="2" width="70%" bgcolor="#66FFFF">
+              <thead bgcolor="#9c9c9c" border="2">
+                <tr>
+                  <th rowspan="2" width="40%">Thành Phần Đánh Giá</th>
+                  <th colspan="2" width="50%">Nội dung - trọng số</th>
+                </tr>
+                <tr>
+                  <th width="40%">Nội dung</th>
+                  <th width="10%">Tỉ Lệ</th>
+                </tr>
+              </thead>
+              <tbody border="2">
+                <tr>
+                  <td align="left">Đánh giá quá trình</td>
+                  <td align="center">Bài tập cá nhân, bài tập nhóm</td>
+                  <td align="right">15%</td>
+                </tr>
+                <tr>
+                  <td align="left">Kiểm tra giữa kỳ</td>
+                  <td align="center">Giữa kỳ</td>
+                  <td align="right">35%</td>
+                </tr>
+                <tr>
+                  <td align="left">Kiểm tra cuối kỳ</td>
+                  <td align="center">Tự luận</td>
+                  <td style="text-align: right; background-color: yellow">
+                    50%
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bt10-register close">
+            <h1 align="center">ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h1>
+            <form>
+              <table border="1" width="70%" bgcolor="#ffffcc" align="center">
+                <tr>
+                  <td>Tên đăng nhập</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="name"
+                      maxlength="50"
+                      required
+                      size="50"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mật khẩu:</td>
+                  <td>
+                    <input
+                      type="password"
+                      name="pw"
+                      maxlength="18"
+                      required
+                      size="18"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Giới Tính</td>
+                  <td>
+                    <input type="radio" id="check-Nam" name="gender" required />
+                    <label for="check-Nam">Nam</label>
+                    <input type="radio" id="check-Nu" name="gender" />
+                    <label for="check-Nu">Nữ</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ngày sinh</td>
+                  <td>
+                    <input type="date" name="D_of_Y" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><input type="email" required /></td>
+                </tr>
+                <tr>
+                  <td>Ngôn ngữ lập trình yêu thích nhất</td>
+                  <td>
+                    <input type="text" list="favorite" required />
+                    <datalist id="favorite">
+                      <option>C++</option>
+                      <option>C#</option>
+                      <option>PHP</option>
+                      <option>Java</option>
+                      <option>Python</option>
+                    </datalist>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Quy định khi tham gia diễn đàn</td>
+                  <td>
+                    <textarea
+                      readonly
+                      name="message"
+                      rows="5"
+                      cols="20"
+                      aria-checked="false"
+                    >
+          Bài viết phải nghiệm túc, không chứa quảng cáo, không nội dung phản cảm.</textarea
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td bgcolor="white">
+                    <input
+                      type="image"
+                      src="/images/5599504.png"
+                      alt="Submit"
+                      type="submit"
+                      width="70"
+                      height="55"
+                    />
+                    <input
+                      type="image"
+                      src="/images/5277847.png"
+                      alt="reset"
+                      type="reset"
+                      value="reset"
+                      width="70"
+                      height="50"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="changePage">
+        <div class="pagetile">Chuyển Trang</div>
+        <div class="page1">
+          <a href="/HTML/bai1_4.html">Trang 1</a>
+        </div>
+        <div class="page2">
+          <a href="/HTML/bai5_7_8.html">Trang 2</a>
+        </div>
+        <div class="page3">
+          <a href="/HTML/bai6_9.html">Trang 3</a>
+        </div>
+        <div class="page4">
+          <a href="/HTML/bai10.html">Trang 4</a>
+        </div>
+      </div>
+    </div>
+    <div class="linkHTML">
+      <a href="/index.html">Quay Về Trang Sách</a>
+    </div>
+    <script src="/javascript/clock.js"></script>
+  </body>
+</html>

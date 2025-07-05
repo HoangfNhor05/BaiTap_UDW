@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/header_body.css">
+    <link rel="stylesheet" href="/CSS/date_time.css">
+    <link rel="stylesheet" href="/Jquery/jq5_7.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+        <header>
+            JS - JavaScript
+            <br />
+            Bài Tập
+        </header>
+
+        <div class="clock">
+            <p id="date"></p>
+            <p id="time"></p>
+        </div>
+        <div class="page">Trang 2</div>
+        <div class="container">
+
+            <div class="baitap bt5">
+                <div class="title">Bài tập 5</div>
+                <script>
+                    $(document).ready(function () {
+                        $("img").mouseover(function () {
+                            $(this).animate({
+                                width: "+=100px",
+                                height: "+=100px"
+
+                            });
+                            $(this).attr("src", "https://cdn.tuoitre.vn/471584752817336320/2024/7/28/8c8909f338db9d85c4ca-1722172649518602080513.jpg");
+
+                        })
+                            .mouseout(function () {
+                                $(this).animate({
+                                    width: "200px",
+                                    height: "150px"
+                                })
+                                $(this).attr("src", "https://mega.com.vn/media/news/0204_anh-nengau-loopy-sieu-xinh.jpg");
+
+                            })
+                    })
+                </script>
+                <div class="bt5-content">
+                    <img src="https://mega.com.vn/media/news/0204_anh-nengau-loopy-sieu-xinh.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="baitap bt6">
+                <div class="title">Bài tập 6</div>
+
+                <script>
+                    $(document).ready(function () {
+                        $("#sangphai").click(function () {
+
+                            $("div").animate({ 'left': 200 }, 500);
+                        })
+                        $("#sangtrai").click(function () {
+                            $("div").animate({ "left": 0 }, 500)
+                        })
+                        $("#dilen").click(function () {
+                            $("div").animate({ "top": 0 }, 500)
+                        })
+                        $("#dixuong").click(function () {
+                            var top = $(window).height() - $("div").innerHeight();
+                            $("div").animate({ "top": 300 }, 500)
+                        })
+            
+                    })
+            
+                </script>
+
+                <div class="ball"></div>
+                <input type="button" id="sangphai" value="Move right">
+                <input type="button" id="sangtrai" value="Move left">
+                <input type="button" id="dilen" value="Move up">
+                <input type="button" id="dixuong" value="Move down">
+
+
+            </div>
+
+            <div class="baitap bt7">
+                <div class="title">Bài tập 7</div>
+                <script>
+                    $(document).ready(function(){
+                        $(".bt7-container div").mouseover(function(){
+                            $(this).animate({
+                                width:"+=50px",
+                                fontSize:"2em",
+                                fontWeight:900
+                            })
+                        })
+                        .mouseout(function(){
+                            $(this).animate({
+                                width:"10%",
+                                fontSize:"2em",
+                                fontWeight: 400
+                            })
+                        })
+                    })
+                </script>
+                <div class="bt7-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+            </div>
+
+            <div class="changePage">
+                <div class="pagetile">Chuyển Trang</div>
+                <div class="page1">
+                    <a href="/Jquery/jq1_4.html">Trang 1</a>
+                </div>
+                <div class="page2">
+                    <a href="/Jquery/jq5_7.html">Trang 2</a>
+                </div>
+                <div class="page3">
+                    <a href="/Jquery/jq8_9.html">Trang 3</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="linkHTML"><a href="/index.html">Quay Về Trang Sách</a></div>
+        <script src="/javascript/clock.js"></script>
+    </body>
+</body>
+
+</html>

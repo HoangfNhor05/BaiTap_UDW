@@ -1,0 +1,114 @@
+.container {
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .baitap {
+    width: 32%;
+    border: 5px solid #000000;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+    height: 700px;
+  }
+
+  
+.page{
+    width: 5%;
+    height: 60px;
+    background-color: #fff;
+    border: 5px solid #f4ce14;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+    margin-top: -50px;
+  }
+
+  .title {
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: #f4ce14;
+    background-color: #323232;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 3px 4px 5px black;
+    border: 3px solid #f4ce14;
+    margin-bottom: 3px;
+  }
+
+  .btn:hover{
+    color: red;
+    font-weight: 700;
+  }
+
+  /* Bài tập 8 */
+
+  .string-content{
+    height: 30px;
+    font-size: 15px;
+    width: 90%;
+  }
+
+  /* Chuyển Trang */
+
+.changePage{
+    margin-right: -100px;
+     margin-top: 200px;
+     width: 13%;
+     background-color: #fff;
+     height: 200px;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     border: 3px solid #000;
+     font-weight: 900;
+     text-align: center;
+   }
+   .changePage a{
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+     font-weight: 6  00;
+     line-height: 40px;
+     letter-spacing: 3px;
+    
+   }
+   .changePage div{
+     border: 1px solid #000;
+     border-collapse: collapse;
+   }
+   
+   .changePage div:hover a{
+     color: red;
+     font-weight: 900;
+   } 
+   .linkHTML{
+       margin-top: 10px;
+       margin-right:40%;
+       margin-left: 30%;
+       width: 40%;
+       background-color: #fff;
+       text-align: center;
+       border: 2px solid #000000;
+       letter-spacing: 10px;
+   }
+   .linkHTML a{
+       color: #000000;
+       text-decoration: none;
+       font-size: 25px;
+      
+   }
+   
+   .linkHTML:hover a{
+       color: #cc2629;
+       font-weight: 900;
+   }
+  
+  

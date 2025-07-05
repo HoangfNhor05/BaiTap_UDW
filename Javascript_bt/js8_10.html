@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Javascript_bt/js8_10.css" />
+    <link rel="stylesheet" href="/CSS/reset.css" />
+    <link rel="stylesheet" href="/CSS/header_body.css" />
+    <link rel="stylesheet" href="/CSS/date_time.css" />
+    <script src="/Javascript_bt/js8_10.js"></script>
+    <!-- <script src="/Javascript_bt/js01.js"></script> -->
+</head>
+
+<body>
+    <header>
+        JS - JavaScript
+        <br />
+        Bài Tập
+    </header>
+
+    <div class="clock">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+    <div class="page">Trang 3</div>
+    <div class="container">
+        <div class="baitap bt8">
+            <div class="title">Bài tập 8</div>
+            <table>
+                <caption>
+                    String Statistic
+                </caption>
+                <tr>
+                    <td>string:</td>
+                    <td>
+                        <input class="string-content" type="text" name="" size="50" id="stringstt" value="Hello, how are you?      11234525" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn" onclick="Statistic()">Statistic</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="kq"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="baitap bt9">
+            <div class="title">Bài tập 9</div>
+
+            <label for="number">Nhập số phần tử</label>
+            <input type="text" name="" id="number" size="10" value="10" />
+            <br />
+            <button class="btn" onclick="cArray()">Tạo Mảng</button>
+            <button class="btn" onclick="sortAsc()">Sắp xếp tăng dần</button>
+            <button class="btn" onclick="sortDes()">Sắp xếp Giảm dần</button>
+            <br />
+            <label for="arrinitial">Mảng ban đầu</label>
+            <input class="string-content"  type="text" id="arrinitial" size="50" />
+            <br />
+            <label for="arrAsc">Mảng sắp xếp tăng dần</label>
+            <input  class="string-content" type="text" id="arrAsc" size="50" />
+            <br />
+            <label for="arrDes">Mảng sắp xếp giảm dần</label>
+            <input  class="string-content" type="text" id="arrDes" size="50" />
+
+        </div>
+
+        <div class="baitap bt10">
+            <div class="title">Bài tập 10</div>
+            <div id="divtest">
+                <h1  id="title">Welcome HTML5!</h1>
+            </div>
+            <p>
+                <input type="text" id="textInput" autofocus value="Welcome HTML5!" size="50">
+            </p>
+            <p> Màu nền:
+                <input type="color" id="bgColor">
+            </p>
+            <p> Màu chữ:
+                <input type="color" id="textColor">
+            </p>
+            <input class="btn"  type="button" value="Thực hiện" onclick="changeColor()">
+        </div>
+
+        <div class="changePage">
+            <div class="pagetile">Chuyển Trang</div>
+            <div class="page1">
+                <a href="/Javascript_bt/js1_4.html">Trang 1</a>
+            </div>
+            <div class="page2">
+                <a href="/Javascript_bt/js5_7.html">Trang 2</a>
+            </div>
+            <div class="page3">
+                <a href="/Javascript_bt/js8_10.html">Trang 3</a>
+            </div>
+            <div class="page4">
+                <a href="/Javascript_bt/js11_13.html">Trang 4</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="linkHTML"><a href="/index.html">Quay Về Trang Sách</a></div>
+    <script src="/javascript/clock.js"></script>
+</body>
+
+</html>

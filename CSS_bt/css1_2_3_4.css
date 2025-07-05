@@ -1,0 +1,207 @@
+
+.container {
+  margin: auto;
+  margin-top: 15px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.baitap {
+  width: 25%;
+  border: 5px solid #000000;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 19px;
+  height: 700px;
+}
+.page{
+  width: 5%;
+  height: 60px;
+  background-color: #fff;
+  border: 5px solid #f4ce14;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: center;
+  margin-top: -50px;
+}
+.title {
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #f4ce14;
+  background-color: #323232;
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-shadow: 3px 4px 5px black;
+  border: 3px solid #f4ce14;
+  margin-bottom: 20px;
+}
+
+/* Bài tập 1 */
+.b1-heading {
+  color: blue;
+}
+.b1-one {
+  font-family: Arial;
+  background-color: yellow;
+}
+.b1-two {
+  font-family: "Times New Roman";
+  background-color: gray;
+}
+.b1-three {
+  font-family: "Courier New";
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Bài tập 2 */
+.b2-none {
+  text-transform: none;
+}
+.b2-capitalize {
+  text-transform: capitalize;
+  text-align: center;
+}
+.b2-uppercase {
+  text-transform: uppercase;
+  text-align: right;
+}
+.b2-lowercase {
+  text-transform: lowercase;
+  text-align: left;
+}
+.b2-pageOne:first-letter {
+  font-size: 42px;
+  width: 200px;
+}
+.b2-pageOne:first-line {
+  font-weight: bold;
+}
+.b2-shadow {
+  text-shadow: 10px 10px 3px red;
+}
+
+/* Bài Tập 3 */
+.bt3-content p{
+  padding: 10px;
+}
+.bt3-content p[id] {
+  border: 1px solid#000000;
+}
+.bt3-content p[id="summary"] {
+  background-color: #ffff00;
+}
+.bt3-content p[class~="XHTML"] {
+  border: 5px solid #000000;
+}
+.bt3-content p[language|="en"] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.bt3-content p[class^="b"] {
+  border: 3px solid #333333;
+  color: #ff00ff;
+}
+.bt3-content p[class$="x"] {
+  border: 1px solid #333333;
+  color: #ff0000;
+}
+.bt3-content p[class*="in"] {
+  background-color: #00ffff;
+}
+
+/* Bài tập 4 */
+.bt4 {
+  margin: auto;
+}
+.bt4 .bt4-content {
+  border: 3px solid blue;
+  height: 370px;
+  width: 350px;}
+.bt4 table {
+    margin: auto;
+width: 330px;
+  text-align: left;
+  border: 2px solid black;
+}
+caption {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial;
+  color: rgb(35, 34, 34);
+  margin-bottom: 20px;
+}
+th {
+  background-color: rgb(139, 139, 134);
+  color: white;
+  text-align: center;
+}
+tr:nth-child(1),
+tr:nth-child(3) {
+  background-color: rgb(229, 233, 235);
+}
+tr:nth-child(2),
+tr:nth-child(4) {
+  background-color: rgb(194, 196, 198);
+}
+
+.changePage{
+  margin-right: -100px;
+   margin-top: 200px;
+   width: 13%;
+   background-color: #fff;
+   height: 160px;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   border: 3px solid #000;
+   font-weight: 900;
+   text-align: center;
+ }
+ .changePage a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 6  00;
+   line-height: 40px;
+   letter-spacing: 3px;
+  
+ }
+ .changePage div{
+   border: 1px solid #000;
+   border-collapse: collapse;
+ }
+ 
+ .changePage div:hover a{
+   color: red;
+   font-weight: 900;
+ } 
+
+.linkHTML{
+    margin-top: 10px;
+    margin-right:40%;
+    margin-left: 30%;
+    width: 40%;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #000000;
+    letter-spacing: 10px;
+}
+.linkHTML a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+   
+}
+
+.linkHTML:hover a{
+    color: #cc2629;
+    font-weight: 900;
+}
